@@ -1,0 +1,323 @@
+C'est un fichier de log
+    1  git log
+    2  git log
+    3  gitk
+    4  git gui
+    5  git status
+    6  git add .
+    7  git status
+    8  ls
+    9  ls
+   10  git log
+   11  git init
+   12  echo " some text" README.txt
+   13  ls
+   14  echo " some text" >README.txt
+   15  ls
+   16  git status
+   17  git add README.txt 
+   18  git commit -m "mon prmier commit"
+   19  git log
+   20  touch monfich.txt
+   21  git add monfich.txt 
+   22  git commit -m "mon deuxieme commit"
+   23  git log
+   24  git status
+   25  git add README.txt 
+   26  git status
+   27  git commit -m "mon troisieme commit: README"
+   28  git log
+   29  git status
+   30  git add monfich.txt 
+   31  git status
+   32  git commit -m "mon 4eme commit: monfich"
+   33  git log
+   34  git status
+   35  git add monfich.txt 
+   36  git status
+   37  git commit -m "mon 4eme commit: Annuler un commit monfich"
+   38  git log
+   39  git status
+   40  git log
+   41  git log
+   42  git reset --soft HEAD~1
+   43  git log
+   44  git status
+   45  git commit -m "mon 5e commit : Reset Hard"
+   46  git status
+   47  git log
+   48  git reset --hard HEAD~1
+   49  git status
+   50  git log
+   51  ls
+   52  mv README.txt README.md
+   53  git status
+   54  git add .
+   55  git commit -m "mon 6e commit : Changt de chemin"
+   56  git status
+   57  git log
+   58  git log -n5
+   59  git help log
+   60  git status
+   61  git commit -m "mon 7e commit : suppression"
+   62  git add  monfich.txt 
+   63  git status
+   64  git commit -m "mon 7e commit : suppression"
+   65  git status
+   66  git log
+   67  git status
+   68  git checkout -- README.md
+   69  git status
+   70  git status
+   71  git add README.md 
+   72  git status
+   73  git checkout -- README.md
+   74  git status
+   75  git reset README.md
+   76  git status
+   77  git checkout -- README.md
+   78  git blame README.md
+   79  git help log
+   80  git log --pretty=format
+   81  git log --pretty=oneline
+   82  git log --pretty=oneline --abrev-commit
+   83  git log --pretty=oneline --abbrev-commit
+   84  git checkout -b branche1
+   85  git branch -a
+   86  git status
+   87  git add README.md 
+   88  git commit -m "commit n 1 branche1 README"
+   89  git checkout master
+   90  git status
+   91  git checkout -b branche2
+   92  git status
+   93  git add README.md 
+   94  git status
+   95  git commit -m "commit n 2 branche2 README"
+   96  git checkout master
+   97  gitk &
+   98  gitk --all
+   99  gitk --all
+  100  git diff branche1... branche2
+  101  git diff branche1 branche2
+  102  gitk --all
+  103  git merge branche1
+  104  gitk --all
+  105  git log
+  106  git merge branche2
+  107  git log
+  108  git status
+  109  git add README.md 
+  110  git status
+  111  git statusgit status
+  112  git commit -m "commit de merge"
+  113  git log
+  114  git branch -a
+  115  git branch -D branche1
+  116  git branch -a
+  117  git branch -D branche2
+  118  git branch branche1
+  119  git branch branche2
+  120  git branch -a
+  121  git checkout branche1
+  122  git status
+  123  git add README.md 
+  124  git status
+  125  git commit -m "modif branche 1"
+  126  gitk -all
+  127  gitk --all
+  128  git checkout branche2
+  129  git status
+  130  git add README.md 
+  131  git commit -m "modif branche 2"
+  132  git checkout master
+  133  git merge branche1
+  134  git log --pretty=one-line
+  135  git log --pretty=oneline
+  136  git merge branche2
+  137  git log --pretty=oneline
+  138  gitk --all
+  139  history
+  140  git branch -D branche1
+  141  git branch -D branche2
+  142  git branch -a
+  143  git checkout -b branche1
+  144  git add rebaseexec.txt 
+  145  git commit -m "ajout rebaseexec dans branch1"
+  146  git checkout branche2
+  147  git checkout master
+  148  git checkout -b branche2
+  149  git add README.md 
+  150  git status
+  151  git commit -m "modif README dans branch2"
+  152  git status
+  153  git checkout master
+  154  git log --pretty=oneline
+  155  git merge branche1
+  156  git log --pretty=oneline
+  157  git checkout branche2
+  158  git log --pretty=oneline
+  159  git rebase master
+  160  git log --pretty=oneline
+  161  git checkout master
+  162  git log --pretty=oneline
+  163  git merge branche2
+  164  git log --pretty=oneline
+  165  git mergetool
+  166  git log
+  167  git status
+  168  git checkout --  README.txt
+  169  git status
+  170  ls
+  171  git status
+  172  git add .
+  173  git status
+  174  git commit -m "add toto.txt"
+  175  git status
+  176  mv toto.txt titi.txt
+  177  ls
+  178  git status
+  179  git add titi.txt 
+  180  git status
+  181  git add toto.txt
+  182  git status
+  183  git remote
+  184  git init
+  185  echo "some text" > README.txt
+  186  ls
+  187  git status
+  188  git add README.txt 
+  189  git status
+  190  git commit -m " Mon premier commit"
+  191  git status
+  192  git log
+  193  ls .git -al
+  194  ls
+  195  gitk
+  196  ls
+  197  git gui
+  198  git config --global user.name "Jeanine Jamet"
+  199  git config --config user.email "jeanine.jamet@continental-corporation.com"
+  200  git config --global user.email "jeanine.jamet@continental-corporation.com"
+  201  git config --list
+  202  git help
+  203  git help commit
+  204  history
+  205  git status
+  206  git log --pretty=oneline
+  207  git brnach -a
+  208  git branch -a
+  209  git status --porcelain
+  210  git status 
+  211  git status -b
+  212  git status -s
+  213  git status -long
+  214  git status --long
+  215  git config
+  216  git config --list
+  217  git branch -D B2
+  218  git branch -D B1
+  219  cd ..
+  220  ssh-keygen -t RSA
+  221  cat c/Users/Administrateur.ADMIN-8F7R0BLQG/.ssh/id_rsa.pub
+  222  cd c/Users/Administrateur.ADMIN-8F7R0BLQG/.ssh
+  223  cat /c/Users/Administrateur.ADMIN-8F7R0BLQG/.ssh/id_rsa.pub
+  224  ls
+  225  mkdir TP6
+  226  cd TP6
+  227  git clone git@github.com:mguimard/git-training.git
+  228  ls
+  229  ls
+  230  cd git-training/
+  231  ls
+  232  ls -al
+  233  git status
+  234  git checkout -b feature-8
+  235  git status
+  236  git add Jeanine.xml 
+  237  git status
+  238  git commit -m "Close #8"
+  239  git status
+  240  git branch -a
+  241  git push -u origin feature-8
+  242  git push -u origin feature-8
+  243  git branch -a
+  244  git config --global merge.tool meld
+  245  git config --global diff.tool meld
+  246  git config --global mergetool.meld.path “C:\Program Files (x86)\Meld\meld\meld.exe”
+  247  git config --global mergetool.meld.path “C:\Program Files (x86)\Meld\meld\bin\meld.exe”
+  248  git config --global mergetool.meld.path “C:\Program Files\Meld\meld\bin\meld.exe”
+  249  git config --global mergetool.meld.path “C:\Program Files\Meld\meld\meld.exe”
+  250  git difftool
+  251  git mergetool
+  252  git difftool README.md
+  253  git diff --staged
+  254  echo "some text" > conti.txt
+  255  git status
+  256  git add conti.txt 
+  257  git ststaus
+  258  git status
+  259  echo "some ideas" > conti.txt
+  260  git status
+  261  git diff --staged
+  262  git config list
+  263  git config --list
+  264  git config --global mergetool.meld.path “'C:\Program Files (x86)\Meld\meld\meld.exe”
+  265  git config --global mergetool.meld.path “C:\Program Files (x86)\Meld\meld\meld.exe”
+  266  history
+  267  git diff --staged
+  268  git config --list
+  269   git config --global mergetool.meld.path “C:\Program Files (x86)\Meld\meld\meld.exe”
+  270  cat ~/.gitconfig
+  271  meld ~/.gitconfig
+  272   git config --global mergetool.meld.path 'C:\Program Files (x86)\Meld\meld\meld.exe'
+  273   git config --global  --replace-all mergetool.meld.path 'C:\Program Files (x86)\Meld\meld\meld.exe'
+  274  git config --list
+  275  git diff --staged
+  276  git mergetool
+  277  git difftool
+  278  git remote -v
+  279  git remote -add jeanineconti 
+  280  git checkout master
+  281  git log -n 2
+  282  git pull
+  283  git log -n 2
+  284  git log 
+  285  git remote add jeanineconti $ git remote -add jeanineconti
+  286  git remote add jeanineconti $ git remote -add jeanineconti git@github.com:jeaninecontinental/git-training.git
+  287  git remote add jeanineconti $ git remote add jeanineconti git@github.com:jeaninecontinental/git-training.git
+  288  git remote
+  289  git remote -v
+  290  git remote add jeanineconti git@github.com:jeaninecontinental/git-training.git
+  291  git remote -v
+  292  git branch -a
+  293  git fetch origin -p
+  294  git branch -a
+  295  git branch -a
+  296  git fetch origin -p
+  297  git branch -a
+  298  git branch -D feature-8
+  299  git branch -a
+  300  git branch -vv
+  301  git fetch jeanineconti -p
+  302  git branch -a
+  303  history
+  304  git branch -a
+  305  git push --delete jeanineconti feature-11
+  306  git branch -a
+  307  git push --delete jeanineconti feature-2
+  308  git branch -a
+  309  git branch -avv
+  310  git branch -u jeanineconti/master master
+  311  git branch -avv
+  312  git status
+  313  git add toto.txt 
+  314  git status
+  315  git add conti.txt 
+  316  git status
+  317  git commit -m "correction de bug Jeanine"
+  318  git push jeanineconti master
+  319  git status
+  320  git branch -avv
+  321  history
+  322  history >> NoteGit.txt
